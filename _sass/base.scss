@@ -63,3 +63,9 @@ $drop-shadow: 	drop-shadow(0px 5px 10px rgba(#000, 0.1))
 	margin: 0;
 	padding: 0;
 }
+
+iframe {
+	height: 40vh;
+	min-height: 800px;
+	width:100vw;
+}
