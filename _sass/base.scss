@@ -77,3 +77,8 @@ $drop-shadow: 	drop-shadow(0px 5px 10px rgba(#000, 0.1))
 	height: 350px;
 	z-index:-1;
 }
+
+#bannerImg {
+	background: url(assets/banner.png);
+	background-size: 100% 100%;
+}
