@@ -5,13 +5,13 @@
       document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
         var calendar = new FullCalendar.Calendar(calendarEl, {
-          views: {
-            timeGridFourDay: {
-              type: 'timeGrid',
-              duration: { days: 4 },
-              buttonText: '4 day'
-            }
-          },
+         initialView: 'timeGridFourDay',
+         views: {
+          timeGridFourDay: {
+            type: 'timeGrid',
+            duration: { days: 4 }
+          }
+         },
           eventSources: [{
             googleCalendarId: 'o9bp9q43s7l1sqhdj69bki5v75uvcmlg@import.calendar.google.com'
           }, 
