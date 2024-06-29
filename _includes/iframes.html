@@ -1,5 +1,16 @@
-<iframe
-  id="standAloneIIIFRoadmap"
-  title="Stand Alone IIIF Roadmap"
-  src="https://app.asana.com/read-only/Stand-Alone-IIIF-Presentation-API/211447924683288/0ca8cf394c69898dc39fbf9d7f173ea4/timeline">
-</iframe>
+    <div id='calendar'></div>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/index.global.min.js'></script>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth',
+          events: {
+            googleCalendarId: 'o9bp9q43s7l1sqhdj69bki5v75uvcmlg@import.calendar.google.com'
+          }
+        });
+        calendar.render();
+      });
+
+    </script>
