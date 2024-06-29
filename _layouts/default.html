@@ -4,13 +4,12 @@
 {% include head.html %}
 
 <body>
-    <div class="imageWrapper">
-            <div class="headerBackground">
-                <div class="container">
-                    {% include header.html %}
-                    {% include iframes.html %}
-                </div>
-            </div>
-        </div>
+    <video autoplay muted loop id="myVideo">
+      <source src="assets/2020_CRKN_Website_Header_FINAL.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        {% include header.html %}
+        {% include iframes.html %}
+    </div>
 </body>
 </html>
