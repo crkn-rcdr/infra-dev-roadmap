@@ -4,11 +4,20 @@
 
       document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-          initialView: 'dayGridMonth',
-          events: {
+        var calendar = new FullCalendar.Calendar(calendarEl, {,
+          views: {
+            timeGridFourDay: {
+              type: 'timeGrid',
+              duration: { days: 4 },
+              buttonText: '4 day'
+            }
+          },
+          eventSources: [{
             googleCalendarId: 'o9bp9q43s7l1sqhdj69bki5v75uvcmlg@import.calendar.google.com'
-          }
+          }, 
+          {
+            googleCalendarId: 't3e2pi9kdvjr3sovhap05kv5km8sfmlr@import.calendar.google.com'  
+          }]
         });
         calendar.render();
       });
