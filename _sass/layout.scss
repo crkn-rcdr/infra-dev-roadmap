@@ -131,6 +131,8 @@ header {
     padding: 6px;
     width: 102px;
     height: 50px;
+    -webkit-clip-path: url(#shape);
+    clip-path: url(#shape);
 }
 
 @media only screen and (max-width: 768px) {
